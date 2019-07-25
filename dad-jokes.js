@@ -1,20 +1,4 @@
-// let jokes = [
-//     {
-//         joke: "",
-//         rating: 0
-//     },
-//     { joke: "", rating: 0 },
-//     {
-//         joke: "",
-//         rating: 0
-//     },
-//     { joke: "", rating: 0 },
-//     {
-//         joke: "",
-//         rating: 0
-//     },
-//     { joke: "", rating: 0 }
-// ];
+
 // import jokes from './dadJokes'
 
 let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock, knock. Who\'s there? Pizza. Pizza who?', 'answer':'Pizza a really great guy!'},
@@ -50,7 +34,7 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 31, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why did the man get fired from the orange juice factory?', 'answer': 'Lack on concentration.' },
 { 'id': 32, 'type': 'one line jokes', 'rating': 'G', 'question': 'What did one tonsil say to the other?', 'answer': 'Better get dressed. The doc\'s taking us out tonight!' },
 { 'id': 33, 'type': 'one line jokes', 'rating': 'G', 'question': 'Did you hear about the kidnapping in the park?', 'answer': 'They woke him up.' },
-{ 'id': 34, 'type': 'one line jokes', 'rating': 'G', 'question': 'Did you hear aout the ?', 'answer': 'Because 7, 8, 9.' },
+{ 'id': 34, 'type': 'one line jokes', 'rating': 'G', 'question': 'Did you hear about the ?', 'answer': 'Because 7, 8, 9.' },
 { 'id': 35, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a guy lying on your doorstep?', 'answer': 'Matt.' },
 { 'id': 36, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do geese take for their allergies?', 'answer': 'Anti-hissss-tamines.' },
 { 'id': 37, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why do hippies like camping?', 'answer': 'Because it\'s in-tents, man!' },
@@ -70,7 +54,7 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 51, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why did the chicken cross the road?', 'answer': 'To get the "Chinese Daily." Do you get it? Me neither, I get "The Times."' },
 { 'id': 52, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a rich elf?', 'answer': 'Welfy.' },
 { 'id': 53, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do birds give out on Halloween?', 'answer': 'Tweets.' },
-{ 'id': 54, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a smart group of trees?', 'answer': 'A brainforest.' },
+{ 'id': 54, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a smart group of trees?', 'answer': 'A brain-forest.' },
 { 'id': 55, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why didn\'t the skeleton cross the road?', 'answer': 'Because he didn\'t have any guts.' },
 { 'id': 56, 'type': 'one line jokes', 'rating': 'G', 'question': 'What did one horse say to the other horse at the dance?', 'answer': 'You mus-tango with me!' },
 { 'id': 57, 'type': 'one line jokes', 'rating': 'G', 'question': 'What is the definition of a good farmer?', 'answer': 'A man outstanding in his field.' },
@@ -79,11 +63,11 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 60, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do mountains stay warm in the winter?', 'answer': 'Snowcaps.' },
 { 'id': 61, 'type': 'story jokes', 'rating': 'G', 'story': 'After many years, a prisoner is finally released. He runs around yelling, "I\'m free! I\'m Free!" A little kids walks up to him and says, "So what? I\m 4.' },
 { 'id': 62, 'type': 'story jokes', 'rating': 'PG', 'story': 'You should really thank your Dad on father\'s day. Your mom probably wasn\'t in the mood.' },
-{ 'id': 63, 'type': 'story jokes', 'rating': 'G', 'question': 'Why was 6 afraid of 7?', 'answer': 'Because 7, 8, 9.' },
-{ 'id': 64, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Stopwatch! Stopwatch who?', 'answer': 'Stopwatch you\'re doing and open this door!' },
-{ 'id': 65, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Who. Who who?', 'answer': 'Hold on. Is there an owl in here?' },
-{ 'id': 66, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Cash. Cash who?', 'answer': 'Thanks, but I\'d rather have some peanuts' },
-{ 'id': 67, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Yacht. Yacht who?', 'answer': 'We\'ve been talking, yacht to know me by now!' },
-{ 'id': 68, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
-{'id': 69, 'type':'one line jokes', 'rating':'M', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
-{'id': 70, 'type':'one line jokes', 'rating':'G', 'question':'Why can\'t dalmations hide?', 'answer':'Because they\'re always spotted.'}];
+{ 'id': 63, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Stopwatch! Stopwatch who?', 'answer': 'Stopwatch you\'re doing and open this door!' },
+{ 'id': 64, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Who. Who who?', 'answer': 'Hold on. Is there an owl in here?' },
+{ 'id': 65, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Cash. Cash who?', 'answer': 'Thanks, but I\'d rather have some peanuts' },
+{ 'id': 68, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Yacht. Yacht who?', 'answer': 'We\'ve been talking, yacht to know me by now!' },
+{ 'id': 69, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
+{'id': 70, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
+{ 'id': 71, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
+{'id': 72, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}];
