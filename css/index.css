@@ -156,26 +156,26 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #0C4A60;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: 'Arial', sans-serif;
+  color: #0C4A60;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 p {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 .container-home {
   max-width: 1050px;
@@ -196,7 +196,8 @@ p {
   padding-bottom: 2.5rem;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 5.8rem;
+  color: #EF6C33;
 }
 nav {
   display: flex;
@@ -214,13 +215,14 @@ nav ul {
 }
 nav ul a {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: black;
   padding-left: 2.3rem;
 }
 nav ul a:hover {
   background-color: #2f5797;
   color: white;
+  border-radius: 25px;
 }
 .intro img {
   border-radius: 5px;
@@ -282,23 +284,23 @@ footer {
     justify-content: center;
   }
 }
-.visit-planets {
+.humor {
   padding-top: 15px;
   padding-bottom: 0px;
 }
 @media only screen and (max-width: 500px) {
-  .visit-planets {
+  .humor {
     width: 95%;
     padding: 0 5px 0;
   }
 }
-.visit-planets h3 {
+.humor h3 {
   margin-top: 11px;
 }
-.visit-planets p {
+.humor p {
   margin-top: 13px;
 }
-.walk {
+.question {
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -306,49 +308,50 @@ footer {
   padding: 50px 60px;
 }
 @media only screen and (max-width: 500px) {
-  .walk {
+  .question {
     width: 98%;
     margin: auto;
     flex-direction: column-reverse;
     padding: 0;
   }
 }
-.walk .walk-text {
+.question .what-text {
   width: 50%;
 }
 @media only screen and (max-width: 500px) {
-  .walk .walk-text {
+  .question .what-text {
     width: 100%;
     margin: auto;
   }
 }
-.walk .walk-text h3 {
+.question .what-text h3 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.walk .walk-text p {
+.question .what-text p {
   margin-bottom: 26px;
 }
-.walk-img {
+.question-img {
   width: 46%;
+  height: 60px;
   margin-left: 4%;
   border-radius: 20px;
 }
 @media only screen and (max-width: 500px) {
-  .walk-img {
+  .question-img {
     width: 100%;
     margin-left: 0;
     flex-direction: column-reverse;
     margin-top: 20px;
   }
 }
-.walk-img img {
+.question-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 @media only screen and (max-width: 500px) {
-  .walk-img img {
+  .question-img img {
     width: 100%;
   }
 }
