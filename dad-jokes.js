@@ -71,3 +71,32 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 {'id': 70, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
 { 'id': 71, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
 {'id': 72, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}];
+
+
+let jokeOne = document.querySelector(".joke1");
+let jokeTwo = document.querySelector(".joke2");
+let jokeThree = document.querySelector(".joke3");
+
+jokeOne.addEventListener('mouseover', () => {
+  jokeOne.setAttribute('src', 'img/shoeJokeTwo.png');
+});
+
+jokeOne.addEventListener('mouseout', () => {
+  jokeOne.setAttribute('src', 'img/shoeJokeOne.png')
+});
+
+jokeTwo.addEventListener('mouseover', () => {
+  jokeTwo.setAttribute('src', 'img/pepperJokeTwo.png');
+});
+
+jokeTwo.addEventListener('mouseout', () => {
+  jokeTwo.setAttribute('src', 'img/pepperJokeOne.png')
+});
+
+jokeThree.addEventListener('mouseover', () => {
+  jokeThree.setAttribute('src', 'img/leftoverJokeTwo.png');
+});
+
+jokeThree.addEventListener('mouseout', () => {
+  jokeThree.setAttribute('src', 'img/leftoverJokeOne.png')
+});
