@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
+import {LandingPage, LoginPage, SignUpPage} from './views'
+import {Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <h1>Dad Jokes</h1>
+       <Route exact path = '/' component = {LandingPage} />
+       <Route exact path = '/login' component = {LoginPage} />
+       <Route exact path = '/signup' component = {SignUpPage} />
       </header>
     </div>
   );
