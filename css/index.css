@@ -247,6 +247,7 @@ footer {
 }
 .intro p {
   padding: 0 15px;
+  width: 95%;
 }
 .intro img {
   border-radius: 5px;
@@ -287,6 +288,7 @@ footer {
 .humor {
   padding-top: 15px;
   padding-bottom: 0px;
+  width: 95%;
 }
 @media only screen and (max-width: 500px) {
   .humor {
@@ -316,7 +318,7 @@ footer {
   }
 }
 .question .what-text {
-  width: 50%;
+  width: 85%;
 }
 @media only screen and (max-width: 500px) {
   .question .what-text {
