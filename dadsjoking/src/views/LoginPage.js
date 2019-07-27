@@ -1,5 +1,5 @@
 import React from 'react'
-import login from '../actions'
+import {login} from '../actions/index'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap'

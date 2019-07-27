@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import thunk from "redux-thunk";
 import App from './App'
-import rootReducer from "./reducers";
+import {rootReducer} from "./reducers/index";
 
 // Custom redux logger!!
 const logger = store => next => action => {

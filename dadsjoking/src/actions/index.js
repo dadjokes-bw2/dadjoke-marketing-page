@@ -34,11 +34,13 @@ export const EDIT_PRIVATE_JOKE = 'EDIT_PRIVATE_JOKE'
 export const EDIT_PRIVATE_JOKE_SUCCESS = 'EDIT_PRIVATE_JOKE_SUCCESS'
 export const EDIT_PRIVATE_JOKE_FAILED = 'EDIT_PRIVATE_JOKE_FAILED'
 
-export function signUp(user, pass) {
+export function signUp(username, password) {
     return dispatch => {
         dispatch({type:SIGN_UP})
 
-        return axios.post("https://backend-dadjokes.herokuapp.com/api/auth/register", {user, pass})
+        const user = {username, password}
+
+        return axios.post("https://backend-dadjokes.herokuapp.com/api/auth/register", user)
             .then((res) => {
                 console.log(res)
                 dispatch({type: SIGN_UP_SUCCESS})
@@ -50,11 +52,13 @@ export function signUp(user, pass) {
     }
 }
 
-export function login(user, pass) {
+export function login(username, password) {
     return dispatch => {
         dispatch({type:LOG_IN})
 
-        return axios.post("https://backend-dadjokes.herokuapp.com/api/auth/login", {user, pass})
+        const user = {username, password}
+
+        return axios.post("https://backend-dadjokes.herokuapp.com/api/auth/login", user)
             .then((res) => {
                 console.log(res)
                 dispatch({type: LOG_IN_SUCCESS})
@@ -72,10 +76,10 @@ export function getPublicJokes() {
 
         axios.get("https://backend-dadJokes.herokuapp.com/api/publicJokes")
             .then((res) => {
-                dispatch({type: GET_PUBLIC_JOKES_SUCCESS, payload: res })
+                dispatch({type: GET_PUBLIC_JOKES_SUCCESS, payload: res.data })
             })
             .catch((err) => {
-                dispatch({type: GET_PUBLIC_JOKES_SUCCESS, payload: err})
+                dispatch({type: GET_PUBLIC_JOKES_FAILED, payload: err})
             })
     }
 }
