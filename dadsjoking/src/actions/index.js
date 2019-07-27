@@ -67,7 +67,17 @@ export function login(user, pass) {
 }
 
 export function getPublicJokes() {
+    return dispatch => {
+        dispatch({type: GET_PUBLIC_JOKES})
 
+        axios.get("https://backend-dadJokes.herokuapp.com/api/publicJokes")
+            .then((res) => {
+                dispatch({type: GET_PUBLIC_JOKES_SUCCESS, payload: res })
+            })
+            .catch((err) => {
+                dispatch({type: GET_PUBLIC_JOKES_SUCCESS, payload: err})
+            })
+    }
 }
 
 export function getPrivateJokes() {

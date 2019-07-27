@@ -1,4 +1,7 @@
 import React from 'react'
+import signUp from '../actions'
+import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom'
 import {Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap'
 
 class SignUpPage extends React.Component {
@@ -6,7 +9,6 @@ class SignUpPage extends React.Component {
         super()
         this.state = {
             username: '',
-            email: '',
             password: ''
         }
     }
@@ -20,17 +22,13 @@ class SignUpPage extends React.Component {
 
     submit = e => {
         e.preventDefault()
-        const {username, password, email} = this.state
+        const {username, password} = this.state
     }
 
     render() {
-        const {username, password, email} = this.state
+        const {username, password} = this.state
         return (
             <Form>
-                <FormGroup>
-                    <Label for = 'email'>E-mail</Label>
-                    <Input type = 'email' name = 'email' placeholder = 'someone@example.com' value = {email} onChange = {this.handleChanges} />
-                </FormGroup>
                 <FormGroup>
                     <Label for = 'username'>Username</Label>
                     <Input type = 'text' name = 'username' placeholder = 'Username' value = {username} onChange = {this.handleChanges} />
@@ -39,10 +37,23 @@ class SignUpPage extends React.Component {
                     <Label for = 'password'>Password</Label>
                     <Input type = 'text' name = 'password' placeholder = 'Password' value = {password} onChange = {this.handleChanges} />
                 </FormGroup>
-                <Button>Login</Button>
+                <Button>Sign Up!</Button>
             </Form>
         )
     }
 }
 
-export default SignUpPage
+const mapStateToProps = state => ({
+    isLoading: state.isLoading,
+    errorMessage: state.errorMessage
+})
+
+const mapDispatchToProps = {
+    signUp
+}
+
+export default withRouter(
+    connect(
+        mapStateToProps,
+        mapDispatchToProps
+    )(SignUpPage))
