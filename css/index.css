@@ -441,6 +441,8 @@ footer {
 .reverse {
   flex-direction: row-reverse;
 }
-@media only screen and (max-width: 500px) {
-  flex-wrap: wrap-reverse;
+@media only screen and (max-width: 800px) {
+  .reverse {
+    flex-direction: column-reverse;
+  }
 }

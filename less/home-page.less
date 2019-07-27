@@ -212,10 +212,16 @@
 			padding: 0;
 		}
 	}
+
 	.reverse {
 		flex-direction: row-reverse;
-	}
-		@media @phone {
-			// flex-direction: column-reverse;
-			flex-wrap: wrap-reverse;
-	}
+		
+		@media @tablet {
+			flex-direction: column-reverse;
+		}
+		// @media @phone {
+		// 	// flex-direction: column-reverse;
+		// 	// flex-wrap: wrap-reverse;
+		// 	flex-direction: column-reverse;	
+
+}
