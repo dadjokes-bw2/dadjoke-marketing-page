@@ -76,6 +76,8 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 let jokeOne = document.querySelector(".joke1");
 let jokeTwo = document.querySelector(".joke2");
 let jokeThree = document.querySelector(".joke3");
+let jokeFour = document.querySelector(".joke4");
+
 
 jokeOne.addEventListener('mouseover', () => {
   jokeOne.setAttribute('src', 'img/shoeJokeTwo.png');
@@ -100,3 +102,13 @@ jokeThree.addEventListener('mouseover', () => {
 jokeThree.addEventListener('mouseout', () => {
   jokeThree.setAttribute('src', 'img/leftoverJokeOne.png')
 });
+
+jokeFour.addEventListener('mouseover', () => {
+  jokeFour.setAttribute('src', 'img/leftoverJokeTwo.png');
+});
+
+jokeFour.addEventListener('mouseout', () => {
+  jokeFour.setAttribute('src', 'img/leftoverJokeOne.png')
+});
+
+

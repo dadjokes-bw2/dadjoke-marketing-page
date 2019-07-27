@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #22283A;
+  background-color: #EF6C33;
   margin: auto;
   cursor: pointer;
   width: 15%;
@@ -186,51 +186,100 @@ p {
 .banner {
   width: 100%;
   font-size: 4rem;
-  background-color: whitesmoke;
+  background-color: ghostwhite;
   padding-top: 2rem;
 }
 .banner h1 {
+  font-family: 'Jacques Francois Shadow', cursive;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   padding-bottom: 2.5rem;
   align-items: center;
   justify-content: center;
-  font-size: 5.8rem;
-  color: #EF6C33;
+  font-size: 8.8rem;
+  font-weight: 400;
+  color: #0C4A60;
+}
+@media only screen and (max-width: 500px) {
+  .banner h1 {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .banner h1 {
+    font-size: 4.5rem;
+    font-weight: 200;
+  }
 }
 nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 25px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 5px;
+}
+@media only screen and (max-width: 500px) {
+  nav ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav ul {
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 nav ul a {
   text-decoration: none;
   font-size: 2rem;
-  color: black;
-  padding-left: 2.3rem;
+  color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: #EF6C33;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  nav ul a {
+    border-radius: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav ul a {
+    margin: 0.5rem;
+  }
 }
 nav ul a:hover {
-  background-color: #2f5797;
+  background-color: #0C4A60;
   color: white;
-  border-radius: 25px;
 }
-.intro img {
+.dads {
   border-radius: 5px;
   width: 100%;
   margin: 0 auto;
+  height: auto;
 }
 @media only screen and (max-width: 500px) {
-  width: 100%;
+  .dads {
+    margin: 0 auto;
+    height: 30rem;
+  }
 }
 footer {
   color: #22283B;
@@ -241,6 +290,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  footer p {
+    font-size: 1.3rem;
+  }
+}
+h2,
+h3 {
+  font-weight: 600;
 }
 .intro h2 {
   padding: 15px;
@@ -259,16 +317,42 @@ footer {
 @media only screen and (max-width: 500px) {
   .intro img {
     width: 100%;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .intro img {
+    height: 300px;
   }
 }
 .dad-joke-images {
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .dad-joke-images {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 .dad-joke-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .dad-joke-images .joke1 {
+    width: 40%;
+  }
+  .dad-joke-images .joke2 {
+    display: none;
+  }
+  .dad-joke-images .joke3 {
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .dad-joke-images .joke2 {
@@ -278,8 +362,8 @@ footer {
     display: none;
   }
   .dad-joke-images .joke1 {
-    width: 95%;
-    margin-top: 10px;
+    width: 93%;
+    margin: 0 auto;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -289,11 +373,21 @@ footer {
   padding-top: 15px;
   padding-bottom: 0px;
   width: 95%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  .humor {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 500px) {
   .humor {
+    display: flex;
+    flex-wrap: wrap;
     width: 95%;
     padding: 0 5px 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 .humor h3 {
@@ -301,6 +395,28 @@ footer {
 }
 .humor p {
   margin-top: 13px;
+}
+@media only screen and (max-width: 500px) {
+  .humor p {
+    margin-top: 10px;
+  }
+}
+.joke4 {
+  display: none;
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .joke4 {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
 }
 .question {
   display: flex;
@@ -322,8 +438,8 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .question .what-text {
-    width: 100%;
-    margin: auto;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 .question .what-text h3 {
@@ -361,31 +477,58 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #22283A;
+  background-color: #EF6C33;
   margin: auto;
   cursor: pointer;
-  width: 30%;
+  width: 30rem;
   height: 30px;
   font-size: 2rem;
   border-radius: 5px;
   color: white;
 }
+.btn:hover {
+  background-color: #EF6C33;
+  color: white;
+}
+.btn:hover:hover {
+  background-color: #0C4A60;
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .btn {
+    width: auto;
+    padding: 5px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .btn {
     width: 95%;
-    background-color: #22283A;
-    padding: 30px 0;
+    background-color: #EF6C33;
+    padding: 20px 0;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .btn:hover {
-    background-color: white;
-    color: #22283A;
+}
+.devs {
+  margin: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .devs {
+    margin: 15px;
   }
-  .btn:hover:hover {
-    background-color: skyblue;
-    color: #22283A;
+}
+@media only screen and (max-width: 500px) {
+  .devs {
+    margin: 3rem;
   }
+}
+i {
+  color: #EF6C33;
+  font-size: 2.5rem;
+  margin: 10px;
+}
+i:hover {
+  color: #0C4A60;
 }
