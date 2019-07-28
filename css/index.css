@@ -639,17 +639,16 @@ i:hover {
 .lower-content {
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   position: relative;
-  width: 50%;
+  padding-bottom: 20px;
 }
 .lower-content .btn {
   width: 90px;
-  height: 30px;
+  height: 40px;
   position: absolute;
   top: 15%;
-  left: 40%;
+  left: 47%;
   transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #EF6C33;
