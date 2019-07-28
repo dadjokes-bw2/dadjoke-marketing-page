@@ -3,6 +3,8 @@ import {login} from '../actions/index'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap'
+import NavBar from '../components/NavBar'
+
 
 class LoginPage extends React.Component {
     constructor() {
@@ -37,6 +39,7 @@ class LoginPage extends React.Component {
         const {isLoading, errorMessage} = this.props
         return (
             <div className = 'loginForm'>
+                <NavBar />
                 <Form>
                     <FormGroup>
                         <Label for = 'username'>Username</Label>
