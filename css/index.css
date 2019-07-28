@@ -190,7 +190,7 @@ p {
   padding-top: 2rem;
 }
 .banner h1 {
-  font-family: 'Jacques Francois Shadow', cursive;
+  font-family: "Jacques Francois Shadow", cursive;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -280,6 +280,32 @@ nav ul a:hover {
     margin: 0 auto;
     height: 30rem;
   }
+}
+.banner-jokes {
+  width: 100%;
+  font-size: 4rem;
+  background-color: ghostwhite;
+  padding-top: 2rem;
+}
+.banner-jokes h1 {
+  font-family: "Jacques Francois Shadow", cursive;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 8.8rem;
+  font-weight: 400;
+  color: #0C4A60;
+}
+.banner-jokes nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 footer {
   color: #22283B;
@@ -524,7 +550,6 @@ h3 {
     margin: 3rem;
   }
 }
-
 i {
   color: #EF6C33;
   font-size: 2.5rem;
@@ -532,7 +557,7 @@ i {
 }
 i:hover {
   color: #0C4A60;
-
+}
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -587,4 +612,51 @@ i:hover {
 }
 @media only screen and (max-width: 500px) {
   flex-wrap: wrap-reverse;
+}
+.joke-generator {
+  width: 100%;
+  display: inline-block;
+}
+.joke-generator img {
+  width: 28%;
+  border-radius: 20px;
+  margin: 20px 2.5%;
+  height: 100%;
+}
+.joke-generator button {
+  width: 28%;
+  height: 30px;
+  margin: 20px 2.5%;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: #EF6C33;
+  cursor: pointer;
+}
+.joke-generator button:hover {
+  background-color: #0C4A60;
+}
+.lower-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+}
+.lower-content .btn {
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #EF6C33;
+  color: white;
+  font-size: 2rem;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }

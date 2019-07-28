@@ -1,12 +1,12 @@
 // Home Content
-h2, h3 {
-	font-weight: 600;
+h2,
+h3 {
+  font-weight: 600;
 }
-
 
 .intro {
   h2 {
-		padding: 15px;
+    padding: 15px;
   }
 
   p {
@@ -28,22 +28,21 @@ h2, h3 {
       height: 300px;
       padding: 1rem;
       border-radius: 20px;
-
-		}
-		@media @tablet {
-			height: 300px;
-		}
+    }
+    @media @tablet {
+      height: 300px;
+    }
   }
 }
 
 .dad-joke-images {
-	width: 100%;
+  width: 100%;
 
-		@media @tablet {
-			margin: 0 auto;
-			display: flex;
-			justify-content: center;
-		}
+  @media @tablet {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 
   img {
     width: 28%;
@@ -51,18 +50,18 @@ h2, h3 {
     border-radius: 20px;
     height: 100%;
   }
-	
-	@media @tablet {
-		.joke1 {
-			width: 40%;
-		}
-		.joke2 {
-				display: none;
-		}
-		.joke3 {
-			width: 40%;
-		}
-	}
+
+  @media @tablet {
+    .joke1 {
+      width: 40%;
+    }
+    .joke2 {
+      display: none;
+    }
+    .joke3 {
+      width: 40%;
+    }
+  }
 
   @media @phone {
     .joke2 {
@@ -80,26 +79,26 @@ h2, h3 {
       display: flex;
       justify-content: center;
     }
-	}
+  }
 }
 
 .humor {
   padding-top: 15px;
   padding-bottom: 0px;
-	width: 95%;
-	margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 
-	@media @tablet {
-		margin: 0 auto;
-	}
+  @media @tablet {
+    margin: 0 auto;
+  }
 
   @media @phone {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
-		padding: 0 5px 0;
-		margin: 0 auto;
-		margin-bottom: 10px;
+    padding: 0 5px 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   h3 {
@@ -107,28 +106,28 @@ h2, h3 {
   }
 
   p {
-		margin-top: 13px;
-		@media @phone {
-			margin-top: 10px;
-		}
+    margin-top: 13px;
+    @media @phone {
+      margin-top: 10px;
+    }
   }
 }
 
 .joke4 {
-	display: none;
-	width: 28%;
-	margin: 20px 2.5%;
-	border-radius: 20px;
-	height: 100%;
-	
+  display: none;
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+
   @media @phone {
-		display: flex;
+    display: flex;
     width: 100%;
-		margin: 0 auto;
+    margin: 0 auto;
     height: 100%;
     display: flex;
-		justify-content: center;
-		border-radius: 10px;
+    justify-content: center;
+    border-radius: 10px;
   }
 }
 
@@ -151,7 +150,7 @@ h2, h3 {
 
     @media @phone {
       width: 95%;
-			margin: 0 auto;
+      margin: 0 auto;
     }
 
     h3 {
@@ -189,22 +188,22 @@ h2, h3 {
   }
 }
 .btn {
-	.btn-mixin(white, pointer, 30rem, 30px, 5px);
-	
-	&:hover {
-		background-color: @orange;
-		color: white;
+  .btn-mixin(white, pointer, 30rem, 30px, 5px);
 
-		&:hover {
-			background-color: @dark-blue;
-			color: white;
-		}
-	}
+  &:hover {
+    background-color: @orange;
+    color: white;
 
-	@media @tablet {
-		width: auto;
-		padding: 5px;
-	}
+    &:hover {
+      background-color: @dark-blue;
+      color: white;
+    }
+  }
+
+  @media @tablet {
+    width: auto;
+    padding: 5px;
+  }
 
   @media @phone {
     width: 95%;
@@ -214,86 +213,137 @@ h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 }
 
 .devs {
-	margin: 15px;
+  margin: 15px;
 
-	@media @tablet {
-		margin: 15px;
-	}
-	@media @phone {
-		margin: 3rem;
-	}
+  @media @tablet {
+    margin: 15px;
+  }
+  @media @phone {
+    margin: 3rem;
+  }
 }
 
 i {
-	color: @orange;
-	font-size: 2.5rem;
-	margin: 10px;
+  color: @orange;
+  font-size: 2.5rem;
+  margin: 10px;
 
-	&:hover {
-		color: @dark-blue;
-		}
+  &:hover {
+    color: @dark-blue;
+  }
 }
 
 .container {
-	padding: 0 20px;
-	margin: 0 auto;
-	width: 85%;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 85%;
 
-	h2 {
-		font-size: 5.0rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: @dark-blue;
-		padding: 15px;
-	}
+  h2 {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @dark-blue;
+    padding: 15px;
+  }
 }
-	.about-us {
-		border: 1px solid blue;
-		display: flex;
+.about-us {
+  border: 1px solid blue;
+  display: flex;
 
-		 img {
-			border-radius: 55%;
-			width: 25%;
-			}
+  img {
+    border-radius: 55%;
+    width: 25%;
+  }
 
-			@media @phone {
-				width: 50%;
-				flex-direction: column-reverse;
-			}
+  @media @phone {
+    width: 50%;
+    flex-direction: column-reverse;
+  }
 
-		h3 {
-			font-size: 3.0rem;
-			color: @main-header-color;
-			padding: 15px 0 5px 0;
-			margin: 0 auto;
-		}
+  h3 {
+    font-size: 3rem;
+    color: @main-header-color;
+    padding: 15px 0 5px 0;
+    margin: 0 auto;
+  }
 
-		p {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 85%;
-			padding: 10px 20px;
-			font-size: 1.8rem;
-		}
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+  }
 
-		@media @phone {
-			width: 98%;
-			margin: auto;
-			flex-direction: column-reverse;
-			padding: 0;
-		}
-	}
-	.reverse {
-		flex-direction: row-reverse;
-	}
-		@media @phone {
-			// flex-direction: column-reverse;
-			flex-wrap: wrap-reverse;
-	}
+  @media @phone {
+    width: 98%;
+    margin: auto;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+@media @phone {
+  // flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+}
+.joke-generator {
+  width: 100%;
+  display: inline-block;
+
+  img {
+    width: 28%;
+    border-radius: 20px;
+    margin: 20px 2.5%;
+    height: 100%;
+  }
+
+  button {
+    width: 28%;
+    height: 30px;
+    margin: 20px 2.5%;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: @orange;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @dark-blue;
+    }
+  }
+}
+
+.lower-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+  position: relative;
+  width: 50%;
+  .btn {
+	  width: 90px;
+	  height: 30px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: @orange;
+    color: white;
+    font-size: 2rem;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
