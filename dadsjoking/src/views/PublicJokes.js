@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom'
 import {
     Card, CardBody, CardText
 } from 'reactstrap'
+import NavBar from '../components/NavBar'
 
 function PublicJokes(props) {
     const {isLoading, errorMessage, jokes} = props
@@ -17,6 +18,7 @@ function PublicJokes(props) {
     
         return (
             <section className = 'public-jokes'>
+                <NavBar />
                 <h2>Public Jokes</h2>
                 {jokes.map((joke) => {
                     return (
