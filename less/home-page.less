@@ -3,7 +3,6 @@ h2, h3 {
 	font-weight: 600;
 }
 
-
 .intro {
   h2 {
 		padding: 15px;
@@ -28,7 +27,6 @@ h2, h3 {
       height: 300px;
       padding: 1rem;
       border-radius: 20px;
-
 		}
 		@media @tablet {
 			height: 300px;
@@ -95,7 +93,7 @@ h2, h3 {
 
   @media @phone {
     display: flex;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
     width: 95%;
 		padding: 0 5px 0;
 		margin: 0 auto;
@@ -219,13 +217,26 @@ h2, h3 {
 }
 
 .devs {
-	margin: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
 
 	@media @tablet {
 		margin: 15px;
 	}
 	@media @phone {
-		margin: 3rem;
+		margin: 1rem;
+		// flex-direction: column;
+		flex-wrap: wrap;
+		margin: 0 8rem;
+		justify-content: space-between;
+	}
+}
+
+.devTitle {
+	@media @phone {
+		display: none;
 	}
 }
 
@@ -290,16 +301,10 @@ i {
 			padding: 0;
 		}
 	}
-
 	.reverse {
 		flex-direction: row-reverse;
-		
-		@media @tablet {
-			flex-direction: column-reverse;
-		}
-		// @media @phone {
-		// 	// flex-direction: column-reverse;
-		// 	// flex-wrap: wrap-reverse;
-		// 	flex-direction: column-reverse;	
-
-}
+	}
+		@media @phone {
+			// flex-direction: column-reverse;
+			flex-wrap: wrap-reverse;
+	}
