@@ -598,15 +598,14 @@ i:hover {
   justify-content: center;
   align-items: center;
   color: #0C4A60;
-  padding: 15px;
+  padding: 30px;
 }
 .about-us {
-  border: 1px solid blue;
   display: flex;
 }
 .about-us img {
-  border-radius: 55%;
-  width: 25%;
+  border-radius: 50%;
+  width: 20%;
 }
 @media only screen and (max-width: 500px) {
   .about-us {
@@ -619,6 +618,7 @@ i:hover {
   color: #EF6C33;
   padding: 15px 0 5px 0;
   margin: 0 auto;
+  margin-left: 30px;
 }
 .about-us p {
   display: flex;
