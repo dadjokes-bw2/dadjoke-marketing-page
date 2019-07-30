@@ -524,7 +524,6 @@ h3 {
     margin: 3rem;
   }
 }
-
 i {
   color: #EF6C33;
   font-size: 2.5rem;
@@ -532,7 +531,7 @@ i {
 }
 i:hover {
   color: #0C4A60;
-
+}
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -547,12 +546,11 @@ i:hover {
   padding: 15px;
 }
 .about-us {
-  border: 1px solid blue;
   display: flex;
 }
 .about-us img {
-  border-radius: 55%;
-  width: 25%;
+  border-radius: 50%;
+  width: 20%;
 }
 @media only screen and (max-width: 500px) {
   .about-us {
@@ -565,6 +563,7 @@ i:hover {
   color: #EF6C33;
   padding: 15px 0 5px 0;
   margin: 0 auto;
+  margin-left: 30px;
 }
 .about-us p {
   display: flex;
