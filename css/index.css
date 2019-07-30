@@ -158,6 +158,7 @@ html,
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #0C4A60;
+  background-color: aliceblue;
 }
 h1,
 h2,
@@ -173,9 +174,19 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+@media only screen and (max-width: 500px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
 p {
   font-size: 2rem;
   line-height: 1.5;
+}
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 .container-home {
   max-width: 1050px;
@@ -186,7 +197,7 @@ p {
 .banner {
   width: 100%;
   font-size: 4rem;
-  background-color: ghostwhite;
+  background-color: aliceblue;
   padding-top: 2rem;
 }
 .banner h1 {
@@ -230,6 +241,9 @@ nav ul {
   align-items: center;
   padding: 0 5px;
 }
+nav ul li {
+  margin: 1rem 0;
+}
 @media only screen and (max-width: 500px) {
   nav ul {
     margin: 0 auto;
@@ -255,14 +269,15 @@ nav ul a {
   background-color: #EF6C33;
   border-radius: 10px;
 }
-@media only screen and (max-width: 500px) {
-  nav ul a {
-    border-radius: 15px;
-  }
-}
 @media only screen and (max-width: 800px) {
   nav ul a {
     margin: 0.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  nav ul a {
+    border-radius: 15px;
+    margin-top: 3rem;
   }
 }
 nav ul a:hover {
@@ -283,8 +298,9 @@ nav ul a:hover {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
+  background: #F6F6F6;
+  padding: 10px 0;
+  margin-top: 10px;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
@@ -307,6 +323,11 @@ h3 {
   padding: 0 15px;
   width: 95%;
 }
+@media only screen and (max-width: 500px) {
+  .intro {
+    margin-bottom: 1rem;
+  }
+}
 .intro img {
   border-radius: 5px;
   width: 95%;
@@ -325,6 +346,11 @@ h3 {
 @media only screen and (max-width: 800px) {
   .intro img {
     height: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .intro img {
+    height: 225px;
   }
 }
 .dad-joke-images {
@@ -416,6 +442,7 @@ h3 {
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    margin-top: 1rem;
   }
 }
 .question {
@@ -511,23 +538,51 @@ h3 {
     align-items: center;
   }
 }
-.devs {
-  margin: 15px;
-}
-@media only screen and (max-width: 800px) {
-  .devs {
-    margin: 15px;
+@media only screen and (max-width: 500px) {
+  #contact {
+    margin-top: 1rem;
   }
 }
+@media only screen and (max-width: 320px) {
+  #contact {
+    flex-direction: column;
+  }
+}
+.devs {
+  display: flex;
+  margin: 0 1.5rem;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.devs td {
+  padding: 0 3rem;
+}
 @media only screen and (max-width: 500px) {
-  .devs {
-    margin: 3rem;
+  .devs td {
+    margin: 1rem;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .devs td {
+    justify-content: flex-start;
+    padding: 0 0.2rem;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .devTitle {
+    display: none;
   }
 }
 i {
   color: #EF6C33;
   font-size: 2.5rem;
   margin: 10px;
+  display: inline;
 }
 i:hover {
   color: #0C4A60;
@@ -584,8 +639,6 @@ i:hover {
 .reverse {
   flex-direction: row-reverse;
 }
-@media only screen and (max-width: 800px) {
-  .reverse {
-    flex-direction: column-reverse;
-  }
+@media only screen and (max-width: 500px) {
+  flex-wrap: wrap-reverse;
 }
