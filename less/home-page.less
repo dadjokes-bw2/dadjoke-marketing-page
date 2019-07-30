@@ -6,13 +6,22 @@ h3 {
 
 .intro {
   h2 {
+<<<<<<< HEAD
     padding: 15px;
   }
+=======
+		padding: 15px;
+	}
+>>>>>>> 8fb7a6617f6ab23481f7d51eae2dab3f49044881
 
   p {
     padding: 0 15px;
     width: 95%;
-  }
+	} 
+
+	@media @phone {
+		margin-bottom: 1rem;
+	}
 
   img {
     border-radius: 5px;
@@ -28,10 +37,21 @@ h3 {
       height: 300px;
       padding: 1rem;
       border-radius: 20px;
+<<<<<<< HEAD
     }
     @media @tablet {
       height: 300px;
     }
+=======
+		}
+		@media @tablet {
+			height: 300px;
+		}
+
+		@media @tinyPhone {
+			height: 225px;
+		}
+>>>>>>> 8fb7a6617f6ab23481f7d51eae2dab3f49044881
   }
 }
 
@@ -94,7 +114,7 @@ h3 {
 
   @media @phone {
     display: flex;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
     width: 95%;
     padding: 0 5px 0;
     margin: 0 auto;
@@ -126,8 +146,14 @@ h3 {
     margin: 0 auto;
     height: 100%;
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     border-radius: 10px;
+=======
+		justify-content: center;
+		border-radius: 10px;
+		margin-top: 1rem;
+>>>>>>> 8fb7a6617f6ab23481f7d51eae2dab3f49044881
   }
 }
 
@@ -187,6 +213,7 @@ h3 {
     }
   }
 }
+
 .btn {
   .btn-mixin(white, pointer, 30rem, 30px, 5px);
 
@@ -216,6 +243,7 @@ h3 {
   }
 }
 
+<<<<<<< HEAD
 .devs {
   margin: 15px;
 
@@ -231,6 +259,55 @@ i {
   color: @orange;
   font-size: 2.5rem;
   margin: 10px;
+=======
+#contact {
+	@media @phone {
+		margin-top: 1rem;
+	}
+	@media @tinyPhone {
+		// justify-content: flex-start;
+		flex-direction: column;
+	}
+}
+
+.devs {
+	display: flex;
+	margin: 0 1.5rem;
+	justify-content: space-between;
+	font-size: 1.8rem;
+	text-align: justify;
+
+	td {
+		padding: 0 3rem;
+		
+		
+		@media @phone {
+			margin: 1rem;
+			// flex-direction: column;
+			flex-wrap: wrap;
+			padding: 0 .5rem;
+			justify-content: space-between;
+		}
+		@media @tinyPhone {
+			justify-content: flex-start;
+			padding: 0 .2rem;
+			margin-right: 0;
+		}
+	}
+}
+
+.devTitle {
+	@media @hideTitle {
+		display: none;
+	}
+}
+
+i {
+	color: @orange;
+	font-size: 2.5rem;
+	margin: 10px;
+	display: inline;
+>>>>>>> 8fb7a6617f6ab23481f7d51eae2dab3f49044881
 
   &:hover {
     color: @dark-blue;
@@ -383,3 +460,50 @@ i {
     }
   }
 }
+<<<<<<< HEAD
+=======
+	.about-us {
+		border: 1px solid blue;
+		display: flex;
+
+		 img {
+			border-radius: 55%;
+			width: 25%;
+			}
+
+			@media @phone {
+				width: 50%;
+				flex-direction: column-reverse;
+			}
+
+		h3 {
+			font-size: 3.0rem;
+			color: @main-header-color;
+			padding: 15px 0 5px 0;
+			margin: 0 auto;
+		}
+
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 85%;
+			padding: 10px 20px;
+			font-size: 1.8rem;
+		}
+
+		@media @phone {
+			width: 98%;
+			margin: auto;
+			flex-direction: column-reverse;
+			padding: 0;
+		}
+	}
+	.reverse {
+		flex-direction: row-reverse;
+	}
+		@media @phone {
+			// flex-direction: column-reverse;
+			flex-wrap: wrap-reverse;
+	}
+>>>>>>> 8fb7a6617f6ab23481f7d51eae2dab3f49044881
