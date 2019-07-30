@@ -111,4 +111,15 @@ jokeFour.addEventListener('mouseout', () => {
   jokeFour.setAttribute('src', 'img/leftoverJokeOne.png')
 });
 
+let dadJokes = gRated.filter(function(dadJokes) {
+  return dadJokes.rating === 'G'
+});
+
+let dadJokes = pgRated.filter(function(dadJokes) {
+  return dadJokes.rating === 'PG'
+});
+
+let dadJokes = mRated.filter(function(dadJokes) {
+  return dadJokes.rating === 'M'
+});
 
