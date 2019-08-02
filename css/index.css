@@ -572,6 +572,10 @@ h3 {
     margin-top: 20px;
   }
 }
+.btn a {
+  text-decoration: none;
+  color: white;
+}
 h2 {
   font-size: 6rem;
   display: flex;
