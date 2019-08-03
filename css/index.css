@@ -896,3 +896,17 @@ i:hover {
     flex-direction: column-reverse;
   }
 }
+.photoContainer {
+  position: relative;
+  text-align: center;
+  color: #EF6C33;
+}
+.ranJoke {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  width: 45%;
+  font-weight: 600;
+}
