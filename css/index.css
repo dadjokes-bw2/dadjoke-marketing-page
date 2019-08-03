@@ -802,14 +802,8 @@ i:hover {
   justify-content: center;
 }
 @media only screen and (max-width: 800px) {
-  .joke-generator .generator {
-    width: 40%;
-  }
   .joke-generator .punchline {
-    width: 40%;
-  }
-  .joke-generator .laughing-dad {
-    display: none;
+    width: 70%;
   }
 }
 .joke-generator img {
@@ -854,13 +848,13 @@ i:hover {
 }
 @media only screen and (max-width: 800px) {
   .lower-content h2 {
-    width: 95vw;
+    width: 48%;
     margin: auto;
   }
 }
 @media only screen and (max-width: 800px) {
   .lower-content p {
-    width: 95vw;
+    width: 48%;
     margin: auto;
   }
 }
