@@ -282,11 +282,22 @@ p {
 
 .ranJoke {
   position: absolute;
-  top: 25%;
-  left: 45%;
+  top: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
   width: 45%;
   font-weight: 600;
-}
 
+  @media @tablet {
+    font-size: 2.5rem;
+  }
+
+  @media @phone {
+    font-size: 2rem;
+  }
+
+  @media @tinyPhone {
+    font-size: 1.3rem;
+  }
+}
