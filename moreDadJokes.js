@@ -66,11 +66,11 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 63, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Stopwatch! Stopwatch who?', 'answer': 'Stopwatch you\'re doing and open this door!' },
 { 'id': 64, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Who. Who who?', 'answer': 'Hold on. Is there an owl in here?' },
 { 'id': 65, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Cash. Cash who?', 'answer': 'Thanks, but I\'d rather have some peanuts' },
-{ 'id': 68, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Yacht. Yacht who?', 'answer': 'We\'ve been talking, yacht to know me by now!' },
-{ 'id': 69, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
-{'id': 70, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
-{ 'id': 71, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
-{'id': 72, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}];
+{ 'id': 66, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Yacht. Yacht who?', 'answer': 'We\'ve been talking, yacht to know me by now!' },
+{ 'id': 67, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
+{'id': 68, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
+{ 'id': 69, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
+{'id': 70, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}];
 
 let gRated = dadJokes.filter(function(dadJokes) {
   return dadJokes.rating === 'G'
@@ -82,18 +82,18 @@ let mRated = dadJokes.filter(function(dadJokes) {
   return dadJokes.rating === 'M'
 });
 
-console.log(mRated);
+// console.log(mRated);
 
 let gPreview = gRated.length;
-console.log(gPreview);
+// console.log(gPreview);
 
 
 let genJoke = document.querySelector(".generateJoke");
 let genPunch = document.querySelector(".generatePunch");
 let randomJoke = document.querySelector(".ranJoke");
 
-console.log(genJoke);
-console.log(genPunch);
+// console.log(genJoke);
+// console.log(genPunch);
 
 genJoke.addEventListener("click", () => {
   let ranNum = Math.floor(Math.random() * gPreview);
@@ -116,3 +116,5 @@ xRated.addEventListener("click", () => {
    alert("I'm sorry kiddo but you're a bit too young.")
  }
 });
+
+console.log(dadJokes);

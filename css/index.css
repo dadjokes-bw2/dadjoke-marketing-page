@@ -837,6 +837,9 @@ i:hover {
     width: 95 vw;
     padding: 5px;
   }
+  .lower-content .mature {
+    width: 48%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .lower-content {
@@ -903,10 +906,25 @@ i:hover {
 }
 .ranJoke {
   position: absolute;
-  top: 25%;
-  left: 45%;
+  top: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
   width: 45%;
   font-weight: 600;
+}
+@media only screen and (max-width: 800px) {
+  .ranJoke {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .ranJoke {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .ranJoke {
+    font-size: 1.3rem;
+  }
 }
