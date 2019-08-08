@@ -4,7 +4,7 @@
 let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock, knock. Who\'s there? Pizza. Pizza who?', 'answer':'Pizza a really great guy!'},
 {'id': 2, 'type':'one line jokes', 'rating':'G', 'question':'Why was 6 afraid of 7?', 'answer':'Because 7, 8, 9.'}, 
 { 'id': 3, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Interrupting, squawking parrot. Interrupting, squawking parr-', 'answer': 'SQUAWKKKKKKKKKKKK!' },
-{'id': 4, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call cheese that/s not yours?', 'answer': 'Nacho cheese!' },
+{'id': 4, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call cheese that\'s not yours?', 'answer': 'Nacho cheese!' },
 {'id': 5, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Little old lady. Little old lady who?', 'answer': 'Wow, I didn\'t know you could yodel!' },
 {'id': 6, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do elves learn in school?', 'answer': 'The elf-abet.' },
 {'id': 7, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Lettuce. Lettuce who?', 'answer': 'Lettuce in, it\'s freezing out here!' },
@@ -48,7 +48,7 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 45, 'type': 'one line jokes', 'rating': 'G', 'question': 'What did the fireman name his twin sons?', 'answer': 'Jose\' and Hose-B.' },
 { 'id': 46, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do cows read?', 'answer': 'Cattle-logs.' },
 { 'id': 47, 'type': 'one line jokes', 'rating': 'G', 'question': 'What does a spider-bride wear?', 'answer': 'A webbing dress.' },
-{ 'id': 48, 'type': 'one line jokes', 'rating': 'M', 'question': 'What is the difference between a Ferrari and a porcupine?', 'answer': 'A porcupine keeps it\'s pricks on the outside.' },
+{ 'id': 48, 'type': 'one line jokes', 'rating': 'G', 'question': 'What did the shy pebble say?', 'answer': 'I wish I were a little boulder.' },
 { 'id': 49, 'type': 'one line jokes', 'rating': 'G', 'question': 'Where do young cows eat lunch?', 'answer': 'In the calf-ateria.' },
 { 'id': 50, 'type': 'one line jokes', 'rating': 'G', 'question': 'What did the policeman say to his tummy?', 'answer': 'Freeze! You are under a vest!' },
 { 'id': 51, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why did the chicken cross the road?', 'answer': 'To get the "Chinese Daily." Do you get it? Me neither, I get "The Times."' },
@@ -66,11 +66,18 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 63, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Stopwatch! Stopwatch who?', 'answer': 'Stopwatch you\'re doing and open this door!' },
 { 'id': 64, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Who. Who who?', 'answer': 'Hold on. Is there an owl in here?' },
 { 'id': 65, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Cash. Cash who?', 'answer': 'Thanks, but I\'d rather have some peanuts' },
-{ 'id': 68, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Yacht. Yacht who?', 'answer': 'We\'ve been talking, yacht to know me by now!' },
-{ 'id': 69, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
-{'id': 70, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
-{ 'id': 71, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
-{'id': 72, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}];
+{ 'id': 66, 'type': 'Knock, Knock', 'rating': 'G', 'question': 'Knock, knock. Who\'s there? Yacht. Yacht who?', 'answer': 'We\'ve been talking, yacht to know me by now!' },
+{ 'id': 67, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
+{ 'id': 68, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
+{'id': 69, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
+{'id': 70, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}
+{ 'id': 71, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do repair a split tomato?', 'answer': 'With tomato paste.' },
+{ 'id': 72, 'type': 'one line jokes', 'rating': 'G', 'question': 'Which word is always pronounced wrong?', 'answer': 'WRONG!' },
+{ 'id': 73, 'type': 'one line jokes', 'rating': 'G', 'question': 'What\'s a whale\'s favorite sandwich?', 'answer': 'Peanut butter and jellyfish.' },
+  { 'id': 74, 'type': 'one line jokes', 'rating': 'G', 'question': 'Which side of a chicken has the most feathers?', 'answer': 'The outside.' },
+  { 'id': 75, 'type': 'one line jokes', 'rating': 'G', 'question': 'What is a pig\'s best karate move?', 'answer': 'Pork chop!' },
+  { 'id': 76, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do you keep a skunk from smelling?', 'answer': 'Hold it\'s nose!' },
+  { 'id': 77, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why was the baby ant so confused?', 'answer': 'All of her uncles were ants!' }];
 
 
 let jokeOne = document.querySelector(".joke1");
