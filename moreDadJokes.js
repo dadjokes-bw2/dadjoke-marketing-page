@@ -108,7 +108,7 @@ genJoke.addEventListener("click", () => {
 let xRated = document.querySelector(".xRated");
 
 xRated.addEventListener("click", () => {
- let ageProm =  prompt("Please enter your age - must be at least 21")
+ let ageProm =  prompt("Please enter your age - must be at least 21");
  if (ageProm >= 21) {
    alert(dadJokes[69].question);
    alert(dadJokes[69].answer);

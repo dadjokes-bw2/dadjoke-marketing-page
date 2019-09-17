@@ -70,7 +70,7 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 67, 'type': 'one line jokes', 'rating': 'G', 'question': 'What do you call a sheep with no legs?', 'answer': 'A cloud.' },
 { 'id': 68, 'type': 'one line jokes', 'rating': 'M', 'question': 'What do you call a dog with steel balls?', 'answer': '"Sparky".' },
 {'id': 69, 'type':'one line jokes', 'rating':'G', 'question':'What is smarter than a talking bird?', 'answer':'A spelling bee.'},
-{'id': 70, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'}
+{'id': 70, 'type': 'one line jokes', 'rating': 'X', 'question': 'Why do people like dirty jokes?', 'answer': 'I don\'t know, but you won\'t find them here. DAD jokes only!!'},
 { 'id': 71, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do repair a split tomato?', 'answer': 'With tomato paste.' },
 { 'id': 72, 'type': 'one line jokes', 'rating': 'G', 'question': 'Which word is always pronounced wrong?', 'answer': 'WRONG!' },
 { 'id': 73, 'type': 'one line jokes', 'rating': 'G', 'question': 'What\'s a whale\'s favorite sandwich?', 'answer': 'Peanut butter and jellyfish.' },
