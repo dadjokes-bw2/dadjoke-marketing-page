@@ -74,10 +74,10 @@ let dadJokes = [{'id': 1, 'type':'Knock, Knock', 'rating':'G', 'question':'Knock
 { 'id': 71, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do repair a split tomato?', 'answer': 'With tomato paste.' },
 { 'id': 72, 'type': 'one line jokes', 'rating': 'G', 'question': 'Which word is always pronounced wrong?', 'answer': 'WRONG!' },
 { 'id': 73, 'type': 'one line jokes', 'rating': 'G', 'question': 'What\'s a whale\'s favorite sandwich?', 'answer': 'Peanut butter and jellyfish.' },
-  { 'id': 74, 'type': 'one line jokes', 'rating': 'G', 'question': 'Which side of a chicken has the most feathers?', 'answer': 'The outside.' },
-  { 'id': 75, 'type': 'one line jokes', 'rating': 'G', 'question': 'What is a pig\'s best karate move?', 'answer': 'Pork chop!' },
-  { 'id': 76, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do you keep a skunk from smelling?', 'answer': 'Hold it\'s nose!' },
-  { 'id': 77, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why was the baby ant so confused?', 'answer': 'All of her uncles were ants!' }];
+{ 'id': 74, 'type': 'one line jokes', 'rating': 'G', 'question': 'Which side of a chicken has the most feathers?', 'answer': 'The outside.' },
+{ 'id': 75, 'type': 'one line jokes', 'rating': 'G', 'question': 'What is a pig\'s best karate move?', 'answer': 'Pork chop!' },
+{ 'id': 76, 'type': 'one line jokes', 'rating': 'G', 'question': 'How do you keep a skunk from smelling?', 'answer': 'Hold it\'s nose!' },
+{ 'id': 77, 'type': 'one line jokes', 'rating': 'G', 'question': 'Why was the baby ant so confused?', 'answer': 'All of her uncles were ants!' }];
 
 
 let jokeOne = document.querySelector(".joke1");
